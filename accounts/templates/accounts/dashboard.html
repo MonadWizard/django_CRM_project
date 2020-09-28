@@ -13,13 +13,15 @@
 		<div class="card card-body">
 			<a class="btn btn-primary  btn-sm btn-block" href="">Create Customer</a>
 			<table class="table table-sm">
-				<tr>					
+				<tr>
+					<th>  </th>					
 					<th>Customer</th>
 					<th>Phone</th>
 				</tr>
 				
 				{% for customer in customers %}
 					<tr>
+						<th> <a class="btn btn-outline-info  btn-sm " href="{% url 'customer' customer.id %}"> view </a></th>
 						<td> {{ customer.name }} </td>
 						<td> {{ customer.phone }} </td>
 					</tr>
@@ -49,8 +51,8 @@
 						<td> {{ order.product.name }} </td>
 						<td> {{ order.date_created }} </td>
 						<td> {{ order.status }} </td>
-						<td><a href=""> Update </a></td>
-						<td><a href=""> Delete </a></td>
+						<td><a class="btn btn-sm btn-info"> Update </a></td>
+						<td><a class="btn btn-sm btn-danger"> Delete </a></td>
 					</tr>
 
 				{% endfor %}

@@ -1,1 +1,1 @@
-Rendering Data from models to Templates 
+intrigeted all urls & make dynamic urls 
