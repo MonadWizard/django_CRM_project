@@ -1,2 +1,2 @@
-create form and create + Update + delete item to items  portion on dash-board 
+create inline formset to place order by specific user
 
