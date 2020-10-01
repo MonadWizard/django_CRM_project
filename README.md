@@ -1,2 +1,5 @@
-create search button using django-filter to place order by specific user
+create login + register page 
+and decorator with login_required on views
+
+
 
