@@ -17,6 +17,8 @@ margin-right: 20px;
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+
+        {% if request.user.is_staff %}
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'home' %}">Dashboard </a>
         </li>
@@ -26,6 +28,8 @@ margin-right: 20px;
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li> -->
+
+        {% endif %}
 
       </ul>
     </div>
