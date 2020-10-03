@@ -25,9 +25,11 @@ margin-right: 20px;
         <li class="nav-item">
           <a class="nav-link" href="{% url 'products' %}">Products</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li> -->
+
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'account' %}">Settings</a>
+        </li>
 
         {% endif %}
 

@@ -123,10 +123,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# for images
+# for images we used in template
 MEDIA_URL = '/images/'
 
 # for css,js
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+# configure for submited uploaded images
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')

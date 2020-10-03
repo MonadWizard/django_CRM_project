@@ -1,1 +1,1 @@
-Create user with OneToOne relationship and display data to User template
+Create user profile page and update profile with specific picture 
