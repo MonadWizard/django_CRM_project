@@ -1,1 +1,1 @@
-Create user profile page and update profile with specific picture 
+Create user to customer by registration with Signals 
