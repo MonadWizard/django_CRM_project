@@ -1,1 +1,1 @@
-reset password by email verification
+add model to postgreSQL database 
