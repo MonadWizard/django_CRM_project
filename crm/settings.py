@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'accounts.apps.AccountsConfig',
-    
+
     'django_filters',
 
 ]
@@ -134,3 +134,15 @@ STATICFILES_DIRS = [
 
 # configure for submited uploaded images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
+
+# SMTP Configurations
+# https://docs.djangoproject.com/en/3.1/topics/email/
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'rcareleess@gmail.com'
+EMAIL_HOST_PASSWORD = 'whatlove'
+
